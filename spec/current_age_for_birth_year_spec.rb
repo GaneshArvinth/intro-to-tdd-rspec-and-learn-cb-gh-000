@@ -1,9 +1,12 @@
-require_relative '../current_age_for_birth_year.rb'
+require_relative "../current_age_for_birth_year.rb"
 
-describe "current_age_for_birth_year method" do
-  it "returns the age of a person based on the year of birth" do
-    age_of_person = current_age_for_birth_year(1984)
+require "Calculate age method" do
+  it "from the current year" do
+    currentYear = Time.now.year
+    birthYear = gets.to_i
 
-    expect(age_of_person).to eq(19)
+    currentAge = currentYear - birthYear
+    actualAge = calaculateAge(birthYear)
+    expect(actualAge).to eq(currentAge)
   end
 end
