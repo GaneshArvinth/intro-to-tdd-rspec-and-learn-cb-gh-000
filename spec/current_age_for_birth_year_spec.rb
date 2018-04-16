@@ -6,7 +6,7 @@ describe "Calculate age method" do
     birthYear = 1992
 
     currentAge = currentYear - birthYear
-    actualAge = calaculateAge(birthYear)
+    actualAge = calculateAge (birthYear)
     expect(actualAge).to eq(currentAge)
   end
 end
